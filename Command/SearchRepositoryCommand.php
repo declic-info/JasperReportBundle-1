@@ -35,7 +35,7 @@ class SearchRepositoryCommand extends Command
             ->addArgument('detail', InputArgument::OPTIONAL, 'show full details');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $criteria = null;
 
