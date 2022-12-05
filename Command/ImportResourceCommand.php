@@ -34,7 +34,7 @@ class ImportResourceCommand extends Command
                 'include broken dependencies');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $filename = null;
         $includebrokenDependencies = false;
