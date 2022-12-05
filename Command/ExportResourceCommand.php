@@ -35,7 +35,7 @@ class ExportResourceCommand extends Command
                 'skip dependent resources, e.g. database connection');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $uri = null;
         $filename = "export";
